@@ -5,125 +5,77 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Viktor Kublanov | BA, PO, Mentor in Tech</title>
   <meta name="description" content="Helping IT & Business Analysis Teams Deliver Value, Manage Work Efficiently & Scale Careers Through Digital Strategy | Management 3.0" />
-  <link rel="canonical" href="https://your-domain.example/" />
-
-  <!-- Open Graph / Twitter -->
-  <meta property="og:type" content="website" />
-  <meta property="og:title" content="Viktor Kublanov | BA, PO, Mentor in Tech" />
-  <meta property="og:description" content="Helping IT & Business Analysis Teams Deliver Value, Manage Work Efficiently & Scale Careers Through Digital Strategy | Management 3.0" />
-  <meta property="og:image" content="https://media.licdn.com/dms/image/v2/D4D03AQGnhfMwCoh1DQ/profile-displayphoto-shrink_800_800/B4DZVsremBG4Ac-/0/1741285092812?e=1758153600&v=beta&t=Kfzi8tVfJNzUtrR3drd3hLJCr131BVV46HxRtNEkZz4" />
-  <meta name="twitter:card" content="summary_large_image" />
-
-  <!-- Minimal, mobile-first CSS -->
   <style>
-    :root{
-      --bg: #0c0c0f;
-      --panel: #121219;
-      --text: #e9e9ef;
-      --muted:#a6a6b3;
-      --brand:#6ae3ff; /* accent */
-      --maxw: 760px;
-      --radius: 16px;
-      --shadow: 0 10px 30px rgba(0,0,0,.35);
+    :root {
+      --bg: #ffffff;
+      --text: #000000;
+      --muted: #444444;
+      --radius: 12px;
     }
-    *{box-sizing:border-box}
-    html,body{height:100%}
-    body{
-      margin:0;
-      font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji","Segoe UI Emoji", "Segoe UI Symbol";
-      background: radial-gradient(1200px 800px at 70% -10%, #1a1a28 0%, #0c0c0f 60%);
-      color:var(--text);
-      line-height:1.55;
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
     }
-    a{color:var(--brand); text-decoration:none}
-    a:hover{text-decoration:underline}
-    .wrap{
-      max-width:var(--maxw);
-      margin:0 auto;
-      padding:24px 18px 56px;
+    .wrap {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 24px 18px 56px;
     }
-    header{
-      display:grid;
-      gap:18px;
-      grid-template-columns: 88px 1fr;
-      align-items:center;
-      background: linear-gradient(180deg, rgba(255,255,255,.04), rgba(255,255,255,.00));
-      border:1px solid rgba(255,255,255,.06);
-      padding:16px;
-      border-radius:var(--radius);
-      box-shadow:var(--shadow);
+    header {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      padding-bottom: 16px;
+      border-bottom: 1px solid #ddd;
     }
-    .avatar{
-      width:88px; height:88px; border-radius:50%;
-      object-fit:cover; border:2px solid rgba(255,255,255,.15);
-      background:#222230;
+    .avatar {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
     }
-    h1{
-      font-size:1.35rem;
-      margin:0 0 6px;
-      letter-spacing:.3px;
+    h1 {
+      font-size: 1.6rem;
+      margin: 0 0 6px;
     }
-    .subtitle{
-      margin:0;
-      font-size:.95rem;
-      color:var(--muted);
+    .subtitle {
+      margin: 0;
+      font-size: 1rem;
+      color: var(--muted);
     }
-    .cta{
-      display:flex; flex-wrap:wrap; gap:10px; margin-top:14px;
+    section {
+      margin-top: 20px;
     }
-    .btn{
-      display:inline-flex; align-items:center; justify-content:center;
-      padding:10px 14px; border-radius:12px; border:1px solid rgba(255,255,255,.08);
-      background:#1a1a25; color:var(--text); text-decoration:none; font-weight:600;
-      transition:transform .06s ease, background .2s ease, border-color .2s ease;
+    a {
+      color: #0a66c2; /* LinkedIn blue */
+      text-decoration: none;
     }
-    .btn:hover{transform:translateY(-1px); background:#212133; border-color:rgba(255,255,255,.16)}
-    .btn.primary{background:var(--brand); color:#0b0b10; border-color:transparent}
-    .btn.primary:hover{filter:brightness(1.05)}
-    section{
-      margin-top:18px;
-      background:var(--panel);
-      border:1px solid rgba(255,255,255,.06);
-      border-radius:var(--radius);
-      padding:16px;
-      box-shadow:var(--shadow);
+    a:hover {
+      text-decoration: underline;
     }
-    section h2{margin:.2rem 0 .6rem; font-size:1.05rem}
-    .about p{margin:.6rem 0}
-    .links{display:grid; gap:10px; grid-template-columns:1fr}
-    .linkcard{
-      display:flex; align-items:center; gap:10px; padding:12px;
-      border-radius:12px; background:#151520; border:1px solid rgba(255,255,255,.06)
+    footer {
+      margin-top: 40px;
+      padding-top: 20px;
+      border-top: 1px solid #ddd;
+      text-align: center;
+      font-size: 0.9rem;
+      color: var(--muted);
     }
-    .linkcard strong{display:block}
-    footer{
-      margin-top:22px; color:var(--muted); font-size:.9rem; text-align:center;
+    .socials {
+      margin-top: 10px;
+      display: flex;
+      justify-content: center;
+      gap: 16px;
     }
-    /* Larger screens */
-    @media (min-width:640px){
-      header{grid-template-columns: 108px 1fr}
-      .avatar{width:108px;height:108px}
-      h1{font-size:1.7rem}
-      .subtitle{font-size:1rem}
-      .links{grid-template-columns:repeat(2,1fr)}
+    .socials a img {
+      width: 28px;
+      height: 28px;
+      display: block;
     }
-    /* Accessibility helpers */
-    .sr-only{position:absolute; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden; clip:rect(0,0,0,0); white-space:nowrap; border:0}
   </style>
-
-  <!-- JSON-LD (structured data) -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "Viktor Kublanov",
-    "jobTitle": "Business Analyst, Product Owner, Mentor",
-    "url": "https://your-domain.example/",
-    "sameAs": [
-      "https://www.linkedin.com/in/kublanovvictor/"
-    ]
-  }
-  </script>
 </head>
 <body>
   <div class="wrap">
@@ -134,66 +86,40 @@
         src="https://media.licdn.com/dms/image/v2/D4D03AQGnhfMwCoh1DQ/profile-displayphoto-shrink_800_800/B4DZVsremBG4Ac-/0/1741285092812?e=1758153600&v=beta&t=Kfzi8tVfJNzUtrR3drd3hLJCr131BVV46HxRtNEkZz4"
         alt="Portrait of Viktor Kublanov"
         class="avatar"
-        loading="eager"
-        fetchpriority="high"
-        referrerpolicy="no-referrer"
       />
       <div>
         <h1>Viktor Kublanov | BA, PO, Mentor in Tech</h1>
-        <p class="subtitle">Helping IT &amp; Business Analysis Teams Deliver Value, Manage Work Efficiently &amp; Scale Careers Through Digital Strategy | Management 3.0</p>
-        <div class="cta">
-          <a class="btn primary" href="https://www.linkedin.com/in/kublanovvictor/" rel="me noopener" target="_blank">Connect on LinkedIn</a>
-          <a class="btn" href="#about">About</a>
-        </div>
+        <p class="subtitle">
+          Helping IT &amp; Business Analysis Teams Deliver Value, Manage Work Efficiently &amp; Scale Careers Through Digital Strategy | Management 3.0
+        </p>
       </div>
     </header>
 
     <!-- ABOUT -->
-    <section id="about" class="about" aria-labelledby="about-title">
-      <h2 id="about-title">About</h2>
-      <!--
-        NOTE:
-        LinkedIn blocks automated fetching in browsers.
-        Paste a short “About” paragraph below or keep the link button.
-        TODO: Replace the placeholder paragraph with your actual About text if desired.
-      -->
+    <section>
+      <h2>About</h2>
       <p>
-        I’m a Business Analyst, Product Owner, and Mentor in Tech focused on practical delivery, team effectiveness, and Management 3.0 practices. I help teams align on outcomes, structure work, and grow careers through systems thinking and calm leadership.
+        I’m a Business Analyst, Product Owner, and Mentor in Tech focused on practical delivery, team effectiveness, and Management 3.0 practices. 
+        I help teams align on outcomes, structure work, and grow careers through systems thinking and calm leadership.
       </p>
       <p>
-        For full details, see my LinkedIn profile:
-        <a href="https://www.linkedin.com/in/kublanovvictor/" target="_blank" rel="noopener">linkedin.com/in/kublanovvictor/</a>
+        Learn more on <a href="https://www.linkedin.com/in/kublanovvictor/" target="_blank" rel="noopener">my LinkedIn profile</a>.
       </p>
     </section>
 
-    <!-- LINKS (extend later with YouTube/TikTok/etc.) -->
-    <section aria-labelledby="links-title">
-      <h2 id="links-title">Find me online</h2>
-      <div class="links">
-        <a class="linkcard" href="https://www.linkedin.com/in/kublanovvictor/" target="_blank" rel="noopener">
-          <span aria-hidden="true">💼</span>
-          <div>
-            <strong>LinkedIn</strong>
-            <span>Professional profile &amp; contact</span>
-          </div>
-        </a>
-        <!--
-        TODO: Add your public links when ready:
-        <a class="linkcard" href="https://youtube.com/@YOURCHANNEL" target="_blank" rel="noopener">
-          <span aria-hidden="true">🎙️</span>
-          <div><strong>YouTube Podcast</strong><span>Episodes & clips</span></div>
-        </a>
-        <a class="linkcard" href="https://tiktok.com/@YOURHANDLE" target="_blank" rel="noopener">
-          <span aria-hidden="true">⚡</span>
-          <div><strong>TikTok</strong><span>Short reflections</span></div>
-        </a>
-        -->
-      </div>
-    </section>
-
+    <!-- FOOTER -->
     <footer>
       © Victor Kublanov (c) 2025
+      <div class="socials">
+        <a href="https://www.linkedin.com/in/kublanovvictor/" target="_blank" rel="noopener">
+          <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" />
+        </a>
+        <a href="https://www.youtube.com/@Kublanovvictor" target="_blank" rel="noopener">
+          <img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" alt="YouTube" />
+        </a>
+      </div>
     </footer>
+
   </div>
 </body>
 </html>
